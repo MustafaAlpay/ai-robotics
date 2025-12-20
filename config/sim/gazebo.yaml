@@ -1,0 +1,7 @@
+sim:
+  backend: gazebo
+  world: office_world
+  update_rate_hz: 60
+  ros:
+    namespace: /sim
+    use_sim_time: true

@@ -1,0 +1,10 @@
+runtime:
+  loop_hz: 20
+  max_cycle_time_s: 0.1
+safety:
+  speed_limits:
+    linear_mps: 1.0
+    angular_rps: 1.0
+logging:
+  output_dir: data/runs
+  enable: true

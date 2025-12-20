@@ -1,0 +1,48 @@
+Metadata-Version: 2.4
+Name: ai-robotics
+Version: 0.1.0
+Summary: AtlasForge Robotics: modular AI robotics stack for robots and simulators
+Author: Mustafa Alpay
+License: GPL-3.0-or-later
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: black>=24.0.0; extra == "dev"
+Requires-Dist: pytest>=7.4.0; extra == "dev"
+Requires-Dist: ruff>=0.5.0; extra == "dev"
+Dynamic: license-file
+
+# AtlasForge Robotics
+
+AtlasForge Robotics is an open, modular AI robotics stack for real robots and simulators. It blends autonomy, perception, and policy learning into a coherent pipeline with a strong emphasis on reproducibility and cross-platform support. The system is inspired by best practices from open autonomy stacks and robotics research, but it is built as a clean, extensible Python-first platform.
+
+## Goals
+- Provide a unified API for perception, planning, control, and policy learning.
+- Make it easy to swap between real hardware and simulation backends.
+- Support dataset-driven workflows, offline training, and on-robot evaluation.
+- Ship with clear interfaces that enable custom robot adapters and sensors.
+
+## Core Components
+- **Core Runtime**: deterministic execution loops, data logging, and safety checks.
+- **Perception & Mapping**: 2D/3D pipelines, sensor fusion, and map builders.
+- **Planning & Control**: navigation, trajectory generation, and low-level control.
+- **Policy Learning**: imitation + RL pipelines and replayable datasets.
+- **Simulation Bridges**: adapters for ROS 2 + Gazebo, Isaac Sim, AirSim, and custom sims.
+
+## Quick Start (placeholder)
+```
+python -m venv .venv
+source .venv/bin/activate
+pip install -e .
+```
+
+## Attribution
+If you use AtlasForge in a paper, demo, or product, please reference:
+`https://github.com/MustafaAlpay/ai-robotics`
+
+## License
+GPL-3.0-or-later. See `LICENSE`.
