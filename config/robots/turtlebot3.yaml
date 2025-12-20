@@ -1,0 +1,15 @@
+robot:
+  id: turtlebot3
+  base_type: differential
+  sensors:
+    lidar:
+      topic: /scan
+      range_m: 3.5
+    camera:
+      topic: /camera/color/image_raw
+  limits:
+    linear_mps: 0.22
+    angular_rps: 2.84
+  frames:
+    base: base_link
+    odom: odom

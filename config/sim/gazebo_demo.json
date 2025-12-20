@@ -1,0 +1,34 @@
+{
+  "backend": "mock",
+  "duration_s": 30.0,
+  "loop_hz": 10.0,
+  "output_dir": "data/runs",
+  "run_id": "gazebo-demo",
+  "enable_gui": true,
+  "enable_web": true,
+  "web_port": 8080,
+  "world": {
+    "width_m": 10.0,
+    "height_m": 10.0,
+    "lidar_samples": 181,
+    "lidar_max_range_m": 6.0,
+    "lidar_fov_rad": 3.141592653589793,
+    "camera_width": 24,
+    "camera_height": 18,
+    "obstacles": [
+      {"x": 2.5, "y": 7.0, "radius": 0.6},
+      {"x": 7.2, "y": 2.6, "radius": 0.8},
+      {"x": 6.4, "y": 6.8, "radius": 0.5}
+    ]
+  },
+  "ros": {
+    "namespace": "",
+    "frame_id": "base_link",
+    "topics": {
+      "cmd_vel": "/cmd_vel",
+      "odom": "/odom",
+      "scan": "/scan",
+      "camera": "/camera/color/image_raw"
+    }
+  }
+}

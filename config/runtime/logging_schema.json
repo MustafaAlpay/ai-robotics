@@ -1,0 +1,9 @@
+{
+  "type": "object",
+  "required": ["observation", "state", "action"],
+  "properties": {
+    "observation": {"type": "object"},
+    "state": {"type": "object"},
+    "action": {"type": "object"}
+  }
+}
